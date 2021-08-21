@@ -1,0 +1,63 @@
+.box_top {
+  background: #444 url(../img/pub_23.jpg) fixed no-repeat;
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+}
+.box_top #header {
+  background: rgba(0, 0, 0, 0.4);
+}
+/*START BANNER*/
+#banner {
+  height: 700px;
+  color: #fff;
+}
+#banner .liner {
+  max-width: 300px;
+  /*最大宽度为300px*/
+  text-align: center;
+  /*文字水平居中*/
+  margin: 0 auto;
+  /*盒子水平居中*/
+  position: relative;
+  top: 180px;
+}
+#banner .liner .line {
+  background: #fff;
+  width: 65%;
+  margin-bottom: 10px;
+}
+#banner .liner h1 {
+  margin-bottom: 30px;
+}
+#banner .liner .sub_heading {
+  line-height: 30px;
+}
+#banner .liner .more {
+  margin-top: 180px;
+}
+#banner .liner button:hover {
+  transform: rotate(1080deg) scale(2);
+  transition: 2.5s;
+  z-index: 99;
+}
+.line {
+  height: 2px;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 32px;
+}
+p {
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+button {
+  background: #e85e17;
+  color: #eee;
+  padding: 10px 20px;
+  border: none;
+  margin-top: 20px;
+  outline: none;
+  cursor: pointer;
+}
