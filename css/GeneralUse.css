@@ -1,0 +1,40 @@
+/*START NAV*/
+nav {
+  background: #ccc;
+  height: 50px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 50px;
+  float: right;
+  margin-right: 30px;
+  height: inherit;
+}
+nav ul li a {
+  color: #666;
+}
+nav ul #logo {
+  float: left;
+  margin-left: 50px;
+}
+li a:hover {
+  color: #f00;
+}
+#logo {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  /*文字间隙*/
+}
+.active {
+  position: relative;
+}
+.active span {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background: #fff;
+}
+/*END NAV*/
