@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>JavaScript 灯箱效果</title>
+    <link rel="stylesheet" type="text/css" href="css/Lightbox.css"/>
+    <script src="js/Lightbox.js" type="text/javascript" charset="utf-8"></script>
+  </head>
+  <body>
+    <h2 style="text-align: center;">灯箱效果</h2>
+    
+<!--   被点击图片   -->
+    <div class="row">
+      <div class="column">
+        <img src="//static.nowcoder.com/tutorial/web-examples/img/demo1.jpg" class="hover-shadow cursor" width="100%" alt="自然和日出" onclick="currentSlides(1)" />
+      </div>
+      <div class="column">
+        <img src="//static.nowcoder.com/tutorial/web-examples/img/demo2.jpg" class="hover-shadow cursor" width="100%" alt="巨魔之舌,挪威" onclick="currentSlides(2)" />
+      </div>
+      <div class="column">
+        <img src="//static.nowcoder.com/tutorial/web-examples/img/demo3.jpg" class="hover-shadow cursor" width="100%" alt="山脉和峡湾" onclick="currentSlides(3)" />
+      </div>
+      <div class="column">
+        <img src="//static.nowcoder.com/tutorial/web-examples/img/demo4.jpg" class="hover-shadow cursor" width="100%" alt="北极光" onclick="currentSlides(4)" />
+      </div>
+    </div>
+    
+<!--   灯箱   -->
+    <div id="myModal" class="modal">
+<!--    关闭按钮    -->
+      <span class="close cursor">&times;</span>
+<!--   预览图片容器     -->
+      <div class="modal-content">
+<!--    预览图片      -->
+        <div class="mySlides">
+          <div class="numbertext">1 / 4</div>
+          <img src="//static.nowcoder.com/tutorial/web-examples/img/demo1.jpg" width="100%" alt="自然和日出" />
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">2 / 4</div>
+          <img src="//static.nowcoder.com/tutorial/web-examples/img/demo2.jpg" width="100%" alt="巨魔之舌,挪威" />
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">3 / 4</div>
+          <img src="//static.nowcoder.com/tutorial/web-examples/img/demo3.jpg" width="100%" alt="山脉和峡湾" />
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">4 / 4</div>
+          <img src="//static.nowcoder.com/tutorial/web-examples/img/demo4.jpg" width="100%" alt="北极光" />
+        </div>
+        
+<!--    前一个/后一个      -->
+        <a class="prev" onclick="plusSlides(-1)">&lt;</a>
+        <a class="next" onclick="plusSlides(1)">&gt;</a>
+        
+<!--     专栏     -->
+        <div class="caption-container"><p class="caption"></p></div>
+        
+<!--    专栏图片    -->
+        <div class="column">
+          <img src="//static.nowcoder.com/tutorial/web-examples/img/demo1.jpg" class="hover-shadow cursor" width="100%" alt="自然和日出" onclick="currentSlides(1)" />
+        </div>
+        <div class="column">
+          <img src="//static.nowcoder.com/tutorial/web-examples/img/demo2.jpg" class="hover-shadow cursor" width="100%" alt="巨魔之舌,挪威" onclick="currentSlides(2)" />
+        </div>
+        <div class="column">
+          <img src="//static.nowcoder.com/tutorial/web-examples/img/demo3.jpg" class="hover-shadow cursor" width="100%" alt="山脉和峡湾" onclick="currentSlides(3)" />
+        </div>
+        <div class="column">
+          <img src="//static.nowcoder.com/tutorial/web-examples/img/demo4.jpg" class="hover-shadow cursor" width="100%" alt="北极光" onclick="currentSlides(4)" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
