@@ -1,3 +1,14 @@
+var slideIndex = 1;
+
+/*点击前一个/后一个函数*/
+function plusSlides(n){
+  showSlides(slideIndex += n);
+}
+
+/*点击图片*/
+function currentSlides(n){
+  showSlides(slideIndex = n);
+}
 window.onload = function(){
   var column = document.querySelectorAll(".row>.column");
   for(var i=0; i<column.length; i++){
@@ -8,18 +19,6 @@ window.onload = function(){
 
   document.getElementsByClassName("close")[0].onclick = function(){
     document.getElementById('myModal').style.display = "none";
-  }
-
-  var slideIndex = 1;
-
-  /*点击前一个/后一个函数*/
-  function plusSlides(n){
-    showSlides(slideIndex += n);
-  }
-
-  /*点击图片*/
-  function currentSlides(n){
-    showSlides(slideIndex = n);
   }
 
   /*控制图片随着参数的改变而改变*/
